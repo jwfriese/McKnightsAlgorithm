@@ -4,3 +4,6 @@
 [submodule "Externals/Fleet"]
 	path = Externals/Fleet
 	url = https://github.com/jwfriese/Fleet
+[submodule "Externals/Quick"]
+	path = Externals/Quick
+	url = https://github.com/Quick/Quick

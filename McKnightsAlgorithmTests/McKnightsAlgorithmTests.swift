@@ -1,7 +1,8 @@
 import XCTest
+import Quick
 import Nimble
 import Fleet
 
-class McKnightsAlgorithmTests: XCTestCase {
+class McKnightsAlgorithmTests: QuickSpec {
     
 }
