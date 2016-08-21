@@ -13,7 +13,18 @@
 		7BB14A0D1D6296AD002ABE82 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A0C1D6296AD002ABE82 /* ApplicationViewController.swift */; };
 		7BB14A101D6297E7002ABE82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB14A0E1D6297E7002ABE82 /* Main.storyboard */; };
 		7BB14A111D6297E7002ABE82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB14A0F1D6297E7002ABE82 /* LaunchScreen.storyboard */; };
+		7BB14A3A1D6A3315002ABE82 /* McKnightsAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A391D6A3315002ABE82 /* McKnightsAlgorithmTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BB14A3C1D6A3315002ABE82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BB149EF1D6294E1002ABE82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BB149F61D6294E1002ABE82;
+			remoteInfo = McKnightsAlgorithm;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7BB149F71D6294E1002ABE82 /* McKnightsAlgorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = McKnightsAlgorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		7BB14A0C1D6296AD002ABE82 /* ApplicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
 		7BB14A0E1D6297E7002ABE82 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7BB14A0F1D6297E7002ABE82 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BB14A371D6A3315002ABE82 /* McKnightsAlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = McKnightsAlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB14A391D6A3315002ABE82 /* McKnightsAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = McKnightsAlgorithmTests.swift; sourceTree = "<group>"; };
+		7BB14A3B1D6A3315002ABE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7BB149F41D6294E1002ABE82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB14A341D6A3315002ABE82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				7BB149F91D6294E1002ABE82 /* McKnightsAlgorithm */,
+				7BB14A381D6A3315002ABE82 /* McKnightsAlgorithmTests */,
 				7BB149F81D6294E1002ABE82 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				7BB149F71D6294E1002ABE82 /* McKnightsAlgorithm.app */,
+				7BB14A371D6A3315002ABE82 /* McKnightsAlgorithmTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				7BB14A061D6294E1002ABE82 /* Info.plist */,
 			);
 			path = McKnightsAlgorithm;
+			sourceTree = "<group>";
+		};
+		7BB14A381D6A3315002ABE82 /* McKnightsAlgorithmTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BB14A391D6A3315002ABE82 /* McKnightsAlgorithmTests.swift */,
+				7BB14A3B1D6A3315002ABE82 /* Info.plist */,
+			);
+			path = McKnightsAlgorithmTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = 7BB149F71D6294E1002ABE82 /* McKnightsAlgorithm.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7BB14A361D6A3315002ABE82 /* McKnightsAlgorithmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB14A401D6A3315002ABE82 /* Build configuration list for PBXNativeTarget "McKnightsAlgorithmTests" */;
+			buildPhases = (
+				7BB14A331D6A3315002ABE82 /* Sources */,
+				7BB14A341D6A3315002ABE82 /* Frameworks */,
+				7BB14A351D6A3315002ABE82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BB14A3D1D6A3315002ABE82 /* PBXTargetDependency */,
+			);
+			name = McKnightsAlgorithmTests;
+			productName = McKnightsAlgorithmTests;
+			productReference = 7BB14A371D6A3315002ABE82 /* McKnightsAlgorithmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +149,10 @@
 				TargetAttributes = {
 					7BB149F61D6294E1002ABE82 = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					7BB14A361D6A3315002ABE82 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 7BB149F61D6294E1002ABE82;
 					};
 				};
 			};
@@ -116,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				7BB149F61D6294E1002ABE82 /* McKnightsAlgorithm */,
+				7BB14A361D6A3315002ABE82 /* McKnightsAlgorithmTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 				7BB14A101D6297E7002ABE82 /* Main.storyboard in Resources */,
 				7BB14A111D6297E7002ABE82 /* LaunchScreen.storyboard in Resources */,
 				7BB14A021D6294E1002ABE82 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB14A351D6A3315002ABE82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +206,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BB14A331D6A3315002ABE82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB14A3A1D6A3315002ABE82 /* McKnightsAlgorithmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BB14A3D1D6A3315002ABE82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BB149F61D6294E1002ABE82 /* McKnightsAlgorithm */;
+			targetProxy = 7BB14A3C1D6A3315002ABE82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7BB14A071D6294E1002ABE82 /* Debug */ = {
@@ -252,6 +330,30 @@
 			};
 			name = Release;
 		};
+		7BB14A3E1D6A3315002ABE82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = McKnightsAlgorithmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jwfriese.McKnightsAlgorithmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/McKnightsAlgorithm.app/McKnightsAlgorithm";
+			};
+			name = Debug;
+		};
+		7BB14A3F1D6A3315002ABE82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = McKnightsAlgorithmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jwfriese.McKnightsAlgorithmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/McKnightsAlgorithm.app/McKnightsAlgorithm";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -269,6 +371,15 @@
 			buildConfigurations = (
 				7BB14A0A1D6294E1002ABE82 /* Debug */,
 				7BB14A0B1D6294E1002ABE82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB14A401D6A3315002ABE82 /* Build configuration list for PBXNativeTarget "McKnightsAlgorithmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB14A3E1D6A3315002ABE82 /* Debug */,
+				7BB14A3F1D6A3315002ABE82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
