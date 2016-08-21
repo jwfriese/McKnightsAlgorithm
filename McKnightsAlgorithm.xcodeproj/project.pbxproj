@@ -15,6 +15,7 @@
 		7BB14A111D6297E7002ABE82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB14A0F1D6297E7002ABE82 /* LaunchScreen.storyboard */; };
 		7BB14A3A1D6A3315002ABE82 /* McKnightsAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A391D6A3315002ABE82 /* McKnightsAlgorithmTests.swift */; };
 		7BB14A421D6A354D002ABE82 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB14A411D6A354D002ABE82 /* Nimble.framework */; };
+		7BB14A451D6A35FD002ABE82 /* Fleet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB14A441D6A35FD002ABE82 /* Fleet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		7BB14A391D6A3315002ABE82 /* McKnightsAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = McKnightsAlgorithmTests.swift; sourceTree = "<group>"; };
 		7BB14A3B1D6A3315002ABE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BB14A411D6A354D002ABE82 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Externals/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		7BB14A441D6A35FD002ABE82 /* Fleet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fleet.framework; path = "Externals/Fleet/build/Debug-iphoneos/Fleet.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB14A451D6A35FD002ABE82 /* Fleet.framework in Frameworks */,
 				7BB14A421D6A354D002ABE82 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +109,7 @@
 		7BB14A431D6A355B002ABE82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BB14A441D6A35FD002ABE82 /* Fleet.framework */,
 				7BB14A411D6A354D002ABE82 /* Nimble.framework */,
 			);
 			name = Frameworks;
@@ -138,6 +142,7 @@
 				7BB14A331D6A3315002ABE82 /* Sources */,
 				7BB14A341D6A3315002ABE82 /* Frameworks */,
 				7BB14A351D6A3315002ABE82 /* Resources */,
+				7BB14A461D6A364E002ABE82 /* Copy Storyboard info */,
 			);
 			buildRules = (
 			);
@@ -206,6 +211,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BB14A461D6A364E002ABE82 /* Copy Storyboard info */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Storyboard info";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $PROJECT_DIR/Externals/Fleet/Fleet/Script/copy_storyboard_info_files.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7BB149F31D6294E1002ABE82 /* Sources */ = {
@@ -346,10 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Externals/Nimble/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = McKnightsAlgorithmTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jwfriese.McKnightsAlgorithmTests;
@@ -362,10 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Externals/Nimble/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = McKnightsAlgorithmTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jwfriese.McKnightsAlgorithmTests;

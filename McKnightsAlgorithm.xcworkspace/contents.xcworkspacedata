@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Externals/Fleet/Fleet.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Externals/Nimble/Nimble.xcodeproj">
    </FileRef>
    <FileRef
