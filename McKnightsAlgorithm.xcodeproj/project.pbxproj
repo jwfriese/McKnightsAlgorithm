@@ -14,6 +14,7 @@
 		7BB14A101D6297E7002ABE82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB14A0E1D6297E7002ABE82 /* Main.storyboard */; };
 		7BB14A111D6297E7002ABE82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB14A0F1D6297E7002ABE82 /* LaunchScreen.storyboard */; };
 		7BB14A3A1D6A3315002ABE82 /* McKnightsAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A391D6A3315002ABE82 /* McKnightsAlgorithmTests.swift */; };
+		7BB14A421D6A354D002ABE82 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB14A411D6A354D002ABE82 /* Nimble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		7BB14A371D6A3315002ABE82 /* McKnightsAlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = McKnightsAlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB14A391D6A3315002ABE82 /* McKnightsAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = McKnightsAlgorithmTests.swift; sourceTree = "<group>"; };
 		7BB14A3B1D6A3315002ABE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB14A411D6A354D002ABE82 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Externals/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB14A421D6A354D002ABE82 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		7BB149EE1D6294E1002ABE82 = {
 			isa = PBXGroup;
 			children = (
+				7BB14A431D6A355B002ABE82 /* Frameworks */,
 				7BB149F91D6294E1002ABE82 /* McKnightsAlgorithm */,
 				7BB14A381D6A3315002ABE82 /* McKnightsAlgorithmTests */,
 				7BB149F81D6294E1002ABE82 /* Products */,
@@ -97,6 +101,14 @@
 				7BB14A3B1D6A3315002ABE82 /* Info.plist */,
 			);
 			path = McKnightsAlgorithmTests;
+			sourceTree = "<group>";
+		};
+		7BB14A431D6A355B002ABE82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BB14A411D6A354D002ABE82 /* Nimble.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/Nimble/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = McKnightsAlgorithmTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jwfriese.McKnightsAlgorithmTests;
@@ -346,6 +362,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/Nimble/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = McKnightsAlgorithmTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jwfriese.McKnightsAlgorithmTests;
@@ -382,6 +402,7 @@
 				7BB14A3F1D6A3315002ABE82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
