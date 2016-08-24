@@ -13,10 +13,15 @@
 		7BB14A0D1D6296AD002ABE82 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A0C1D6296AD002ABE82 /* ApplicationViewController.swift */; };
 		7BB14A101D6297E7002ABE82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB14A0E1D6297E7002ABE82 /* Main.storyboard */; };
 		7BB14A111D6297E7002ABE82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB14A0F1D6297E7002ABE82 /* LaunchScreen.storyboard */; };
-		7BB14A3A1D6A3315002ABE82 /* McKnightsAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A391D6A3315002ABE82 /* McKnightsAlgorithmTests.swift */; };
 		7BB14A421D6A354D002ABE82 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB14A411D6A354D002ABE82 /* Nimble.framework */; };
 		7BB14A451D6A35FD002ABE82 /* Fleet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB14A441D6A35FD002ABE82 /* Fleet.framework */; };
 		7BB14A481D6A376F002ABE82 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB14A471D6A376F002ABE82 /* Quick.framework */; };
+		7BB14A4A1D6B409C002ABE82 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A491D6B409C002ABE82 /* QuestionViewController.swift */; };
+		7BB14A4E1D6C7EBF002ABE82 /* StepCoordinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A4D1D6C7EBF002ABE82 /* StepCoordinationViewController.swift */; };
+		7BB14A501D6C83FF002ABE82 /* StepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A4F1D6C83FF002ABE82 /* StepViewController.swift */; };
+		7BB14A521D6C8678002ABE82 /* StepCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A511D6C8678002ABE82 /* StepCoordinator.swift */; };
+		7BB14A541D6C8734002ABE82 /* StepCoordinationViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A531D6C8734002ABE82 /* StepCoordinationViewControllerSpec.swift */; };
+		7BB14A561D6DEAE1002ABE82 /* QuestionViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A551D6DEAE1002ABE82 /* QuestionViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +44,16 @@
 		7BB14A0E1D6297E7002ABE82 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7BB14A0F1D6297E7002ABE82 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB14A371D6A3315002ABE82 /* McKnightsAlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = McKnightsAlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BB14A391D6A3315002ABE82 /* McKnightsAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = McKnightsAlgorithmTests.swift; sourceTree = "<group>"; };
 		7BB14A3B1D6A3315002ABE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BB14A411D6A354D002ABE82 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Externals/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		7BB14A441D6A35FD002ABE82 /* Fleet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fleet.framework; path = "Externals/Fleet/build/Debug-iphoneos/Fleet.framework"; sourceTree = "<group>"; };
 		7BB14A471D6A376F002ABE82 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Externals/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
+		7BB14A491D6B409C002ABE82 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		7BB14A4D1D6C7EBF002ABE82 /* StepCoordinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepCoordinationViewController.swift; sourceTree = "<group>"; };
+		7BB14A4F1D6C83FF002ABE82 /* StepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepViewController.swift; sourceTree = "<group>"; };
+		7BB14A511D6C8678002ABE82 /* StepCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepCoordinator.swift; sourceTree = "<group>"; };
+		7BB14A531D6C8734002ABE82 /* StepCoordinationViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepCoordinationViewControllerSpec.swift; sourceTree = "<group>"; };
+		7BB14A551D6DEAE1002ABE82 /* QuestionViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,10 @@
 				7BB14A0C1D6296AD002ABE82 /* ApplicationViewController.swift */,
 				7BB14A011D6294E1002ABE82 /* Assets.xcassets */,
 				7BB14A061D6294E1002ABE82 /* Info.plist */,
+				7BB14A491D6B409C002ABE82 /* QuestionViewController.swift */,
+				7BB14A4D1D6C7EBF002ABE82 /* StepCoordinationViewController.swift */,
+				7BB14A4F1D6C83FF002ABE82 /* StepViewController.swift */,
+				7BB14A511D6C8678002ABE82 /* StepCoordinator.swift */,
 			);
 			path = McKnightsAlgorithm;
 			sourceTree = "<group>";
@@ -103,8 +117,9 @@
 		7BB14A381D6A3315002ABE82 /* McKnightsAlgorithmTests */ = {
 			isa = PBXGroup;
 			children = (
-				7BB14A391D6A3315002ABE82 /* McKnightsAlgorithmTests.swift */,
 				7BB14A3B1D6A3315002ABE82 /* Info.plist */,
+				7BB14A531D6C8734002ABE82 /* StepCoordinationViewControllerSpec.swift */,
+				7BB14A551D6DEAE1002ABE82 /* QuestionViewControllerSpec.swift */,
 			);
 			path = McKnightsAlgorithmTests;
 			sourceTree = "<group>";
@@ -238,8 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB14A521D6C8678002ABE82 /* StepCoordinator.swift in Sources */,
 				7BB149FD1D6294E1002ABE82 /* TitleViewController.swift in Sources */,
+				7BB14A4E1D6C7EBF002ABE82 /* StepCoordinationViewController.swift in Sources */,
+				7BB14A501D6C83FF002ABE82 /* StepViewController.swift in Sources */,
 				7BB149FB1D6294E1002ABE82 /* AppDelegate.swift in Sources */,
+				7BB14A4A1D6B409C002ABE82 /* QuestionViewController.swift in Sources */,
 				7BB14A0D1D6296AD002ABE82 /* ApplicationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BB14A3A1D6A3315002ABE82 /* McKnightsAlgorithmTests.swift in Sources */,
+				7BB14A561D6DEAE1002ABE82 /* QuestionViewControllerSpec.swift in Sources */,
+				7BB14A541D6C8734002ABE82 /* StepCoordinationViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,11 +392,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = McKnightsAlgorithmTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jwfriese.McKnightsAlgorithmTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/McKnightsAlgorithm.app/McKnightsAlgorithm";
 			};
 			name = Debug;
@@ -385,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = McKnightsAlgorithmTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

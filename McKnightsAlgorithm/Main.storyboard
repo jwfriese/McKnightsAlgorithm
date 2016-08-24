@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Title View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TitleViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TitleViewController" id="BYZ-38-t0r" customClass="TitleViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,10 +24,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qho-CR-K8u">
+                                <rect key="frame" x="275" y="362" width="51" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="Zg5-km-jD4" kind="show" id="WZQ-qR-kYr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="klY-Q6-Ok2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rqf-wR-XhO"/>
+                            <constraint firstItem="Qho-CR-K8u" firstAttribute="centerX" secondItem="klY-Q6-Ok2" secondAttribute="centerX" id="fCd-Io-RDl"/>
+                            <constraint firstItem="Qho-CR-K8u" firstAttribute="top" secondItem="klY-Q6-Ok2" secondAttribute="bottom" constant="48" id="iKF-3g-7md"/>
                             <constraint firstItem="klY-Q6-Ok2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o2O-ya-NTc"/>
                         </constraints>
                     </view>
@@ -34,23 +45,212 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="3Ko-iu-D37">
+        <!--Step One-->
+        <scene sceneID="nvz-hZ-jay">
             <objects>
-                <viewController id="3dH-QJ-21M" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepOne" title="Step One" id="8gp-gW-xEF" customClass="StepViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zuX-5K-9pK"/>
-                        <viewControllerLayoutGuide type="bottom" id="XMd-4O-kpF"/>
+                        <viewControllerLayoutGuide type="top" id="4Ak-4G-BvN"/>
+                        <viewControllerLayoutGuide type="bottom" id="qNJ-Lq-7y3"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fRo-iA-e3F">
+                    <view key="view" contentMode="scaleToFill" id="LBI-C4-Xsp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're like a dream come true" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2A-X2-AJc">
+                                <rect key="frame" x="187" y="290" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d2A-X2-AJc" firstAttribute="centerX" secondItem="LBI-C4-Xsp" secondAttribute="centerX" id="3nW-N7-Oo7"/>
+                            <constraint firstItem="d2A-X2-AJc" firstAttribute="centerY" secondItem="LBI-C4-Xsp" secondAttribute="centerY" id="8bm-mU-PDa"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="stepNumber">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fw8-pA-1aA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="1225"/>
+        </scene>
+        <!--Step Two-->
+        <scene sceneID="caP-1Q-LOS">
+            <objects>
+                <viewController storyboardIdentifier="StepTwo" title="Step Two" id="beD-Dc-xxp" customClass="StepViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eMY-AI-SOS"/>
+                        <viewControllerLayoutGuide type="bottom" id="J2b-Om-qFN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LsW-14-ItA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just wanna be with you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blK-Uf-H0L">
+                                <rect key="frame" x="211" y="290" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="blK-Uf-H0L" firstAttribute="centerX" secondItem="LsW-14-ItA" secondAttribute="centerX" id="7C7-B4-mB5"/>
+                            <constraint firstItem="blK-Uf-H0L" firstAttribute="centerY" secondItem="LsW-14-ItA" secondAttribute="centerY" id="Wjt-t3-XhY"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="stepNumber">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXb-yn-SE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1264" y="1225"/>
+        </scene>
+        <!--Step Three-->
+        <scene sceneID="ezB-nE-IpZ">
+            <objects>
+                <viewController storyboardIdentifier="StepThree" title="Step Three" id="ArF-Ka-2ez" customClass="StepViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vUG-FP-k1w"/>
+                        <viewControllerLayoutGuide type="bottom" id="568-3O-vY8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yzp-yL-vxn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're the only one for me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2i-0q-x52">
+                                <rect key="frame" x="200" y="290" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X2i-0q-x52" firstAttribute="centerX" secondItem="yzp-yL-vxn" secondAttribute="centerX" id="3fA-Bm-3ip"/>
+                            <constraint firstItem="X2i-0q-x52" firstAttribute="centerY" secondItem="yzp-yL-vxn" secondAttribute="centerY" id="9iL-EH-mTq"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="stepNumber">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLq-G5-ZMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1988" y="1225"/>
+        </scene>
+        <!--Question-->
+        <scene sceneID="t5W-VE-Pez">
+            <objects>
+                <viewController storyboardIdentifier="Question" title="Question" id="Vuq-Mu-hE4" customClass="QuestionViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1uJ-oO-q3N"/>
+                        <viewControllerLayoutGuide type="bottom" id="NR5-ul-gn0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ow7-Wg-l9o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you and your partner in love?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQ6-7z-pwY">
+                                <rect key="frame" x="139" y="148" width="322" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccK-zz-kpk">
+                                <rect key="frame" x="155" y="285" width="30" height="30"/>
+                                <state key="normal" title="YES"/>
+                                <connections>
+                                    <action selector="startBackAtOne" destination="Vuq-Mu-hE4" eventType="touchUpInside" id="Rzv-b2-Uch"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRa-Ka-sHF">
+                                <rect key="frame" x="415" y="285" width="30" height="30"/>
+                                <state key="normal" title="NO"/>
+                                <connections>
+                                    <action selector="startBackAtOne" destination="Vuq-Mu-hE4" eventType="touchUpInside" id="fX3-w4-Pun"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ccK-zz-kpk" firstAttribute="top" secondItem="cQ6-7z-pwY" secondAttribute="bottom" constant="110" id="2eG-6a-Kub"/>
+                            <constraint firstItem="ccK-zz-kpk" firstAttribute="leading" secondItem="cQ6-7z-pwY" secondAttribute="leading" constant="16" id="4hT-Y4-PFm"/>
+                            <constraint firstItem="cQ6-7z-pwY" firstAttribute="top" secondItem="1uJ-oO-q3N" secondAttribute="bottom" constant="128" id="HMe-q2-N79"/>
+                            <constraint firstItem="cQ6-7z-pwY" firstAttribute="centerX" secondItem="Ow7-Wg-l9o" secondAttribute="centerX" id="Ii3-bs-mqR"/>
+                            <constraint firstItem="SRa-Ka-sHF" firstAttribute="centerY" secondItem="ccK-zz-kpk" secondAttribute="centerY" id="MHw-sn-bEx"/>
+                            <constraint firstItem="SRa-Ka-sHF" firstAttribute="trailing" secondItem="cQ6-7z-pwY" secondAttribute="trailing" constant="-16" id="qaC-og-EDR"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="stepNumber">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="noButton" destination="SRa-Ka-sHF" id="Cud-gm-vhh"/>
+                        <outlet property="yesButton" destination="ccK-zz-kpk" id="tW8-E2-qnr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eis-1h-U6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1264" y="1992"/>
+        </scene>
+        <!--Application View Controller-->
+        <scene sceneID="633-Ld-DcM">
+            <objects>
+                <viewController storyboardIdentifier="ApplicationViewController" id="Zg5-km-jD4" customClass="ApplicationViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5SU-eO-erg"/>
+                        <viewControllerLayoutGuide type="bottom" id="tSE-qE-rzY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6XB-WJ-rra">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKY-WO-QF8">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <connections>
+                                    <segue destination="8Jb-I7-x3r" kind="embed" id="yXb-3y-BZP"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbN-MS-ZGq">
+                                <rect key="frame" x="510" y="68" width="22" height="22"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cKY-WO-QF8" firstAttribute="leading" secondItem="6XB-WJ-rra" secondAttribute="leadingMargin" id="FJx-hf-lB5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lbN-MS-ZGq" secondAttribute="trailing" constant="48" id="feb-cm-e17"/>
+                            <constraint firstItem="cKY-WO-QF8" firstAttribute="top" secondItem="5SU-eO-erg" secondAttribute="bottom" id="hTz-ga-VJq"/>
+                            <constraint firstItem="tSE-qE-rzY" firstAttribute="top" secondItem="cKY-WO-QF8" secondAttribute="bottom" id="iHw-Ol-5N1"/>
+                            <constraint firstItem="lbN-MS-ZGq" firstAttribute="top" secondItem="5SU-eO-erg" secondAttribute="bottom" constant="48" id="p6U-YT-5Of"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cKY-WO-QF8" secondAttribute="trailing" id="rJt-Zw-3WA"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZaG-Ie-Qwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcZ-Vr-93C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="337"/>
+            <point key="canvasLocation" x="908" y="337"/>
+        </scene>
+        <!--Step Coordination View Controller-->
+        <scene sceneID="g7C-KZ-cPQ">
+            <objects>
+                <pageViewController storyboardIdentifier="StepCoordinationViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="8Jb-I7-x3r" customClass="StepCoordinationViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3V-M3-00m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="337"/>
         </scene>
     </scenes>
 </document>
