@@ -19,7 +19,11 @@ class StepCoordinationViewController: UIPageViewController {
 
 extension StepCoordinationViewController: StepCoordinator {
     func restart() {
-        
+        let stepOne = storyboard?.instantiateViewControllerWithIdentifier("StepOne")
+        self.setViewControllers([stepOne!],
+                                direction: .Forward,
+                                animated: false,
+                                completion: nil)
     }
 }
 
@@ -37,19 +41,24 @@ extension StepCoordinationViewController: UIPageViewControllerDataSource {
             return nil
         }
         
+        var newStep: StepViewController?
         if stepViewController.stepNumber == 1 {
-            return storyboard?.instantiateViewControllerWithIdentifier("StepTwo")
+            newStep = storyboard?.instantiateViewControllerWithIdentifier("StepTwo") as? StepViewController
+            newStep?.coordinator = self
         } else if stepViewController.stepNumber == 2 {
-            return storyboard?.instantiateViewControllerWithIdentifier("StepThree")
+            newStep = storyboard?.instantiateViewControllerWithIdentifier("StepThree") as? StepViewController
+            newStep?.coordinator = self
         } else if stepViewController.stepNumber == 3 {
             if shouldRepeatStepsOneThroughThree {
                 shouldRepeatStepsOneThroughThree = false
-                return storyboard?.instantiateViewControllerWithIdentifier("StepOne")
+                newStep = storyboard?.instantiateViewControllerWithIdentifier("StepOne") as? StepViewController
+                newStep?.coordinator = self
             } else {
-                return storyboard?.instantiateViewControllerWithIdentifier("Question")
+                newStep = storyboard?.instantiateViewControllerWithIdentifier("Question") as? QuestionViewController
+                newStep?.coordinator = self
             }
         }
         
-        return nil
+        return newStep
     }
 }

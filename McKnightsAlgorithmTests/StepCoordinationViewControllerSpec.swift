@@ -42,6 +42,17 @@ class StepCoordinationViewControllerSpec: QuickSpec {
                     expect(subject.viewControllers).to(contain(stepOne))
                 }
                 
+                describe("Restarting") {
+                    beforeEach {
+                        subject.restart()
+                    }
+                    
+                    it("presents the step one view controller") {
+                        expect(subject.viewControllers?.count).to(equal(1))
+                        expect(subject.viewControllers).to(contain(stepOne))
+                    }
+                }
+                
                 describe("Getting the following step") {
                     context("When on step one") {
                         var nextStep: StepViewController!
@@ -54,6 +65,10 @@ class StepCoordinationViewControllerSpec: QuickSpec {
                             expect(nextStep).to(beIdenticalTo(stepTwo))
                         }
                         
+                        it("sets itself as the coordinator of step two") {
+                            expect(nextStep.coordinator).to(beIdenticalTo(subject))
+                        }
+                        
                         context("When on step two") {
                             beforeEach {
                                 nextStep = subject.pageViewController(subject, viewControllerAfterViewController: stepTwo) as? StepViewController
@@ -61,6 +76,10 @@ class StepCoordinationViewControllerSpec: QuickSpec {
                             
                             it("moves to step three") {
                                 expect(nextStep).to(beIdenticalTo(stepThree))
+                            }
+                            
+                            it("sets itself as the coordinator of step three") {
+                                expect(nextStep.coordinator).to(beIdenticalTo(subject))
                             }
                             
                             context("When on step three the first time") {
@@ -72,6 +91,10 @@ class StepCoordinationViewControllerSpec: QuickSpec {
                                     expect(nextStep).to(beIdenticalTo(stepOne))
                                 }
                                 
+                                it("sets itself as the coordinator of step one") {
+                                    expect(nextStep.coordinator).to(beIdenticalTo(subject))
+                                }
+                                
                                 context("When on step three the second time") {
                                     beforeEach {
                                         nextStep = subject.pageViewController(subject, viewControllerAfterViewController: stepThree) as? StepViewController
@@ -79,6 +102,10 @@ class StepCoordinationViewControllerSpec: QuickSpec {
                                     
                                     it("moves to the question step") {
                                         expect(nextStep).to(beIdenticalTo(questionStep))
+                                    }
+                                    
+                                    it("sets itself as the coordinator of the question step") {
+                                        expect(nextStep.coordinator).to(beIdenticalTo(subject))
                                     }
                                     
                                     context("When on the question step") {
