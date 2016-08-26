@@ -11,7 +11,7 @@ class StepCoordinationViewControllerSpec: QuickSpec {
             
             beforeEach {
                 storyboard = UIStoryboard(name: "Main", bundle: nil)
-                subject = storyboard.instantiateViewControllerWithIdentifier("StepCoordinationViewController") as! StepCoordinationViewController
+                subject = storyboard.instantiateViewControllerWithIdentifier("StepCoordination") as! StepCoordinationViewController
             }
             
             describe("After the view has loaded") {

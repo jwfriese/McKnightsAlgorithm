@@ -210,7 +210,7 @@
         <!--Application View Controller-->
         <scene sceneID="633-Ld-DcM">
             <objects>
-                <viewController storyboardIdentifier="ApplicationViewController" id="Zg5-km-jD4" customClass="ApplicationViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Application" id="Zg5-km-jD4" customClass="ApplicationViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5SU-eO-erg"/>
                         <viewControllerLayoutGuide type="bottom" id="tSE-qE-rzY"/>
@@ -222,11 +222,14 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKY-WO-QF8">
                                 <rect key="frame" x="20" y="20" width="560" height="580"/>
                                 <connections>
-                                    <segue destination="8Jb-I7-x3r" kind="embed" id="yXb-3y-BZP"/>
+                                    <segue destination="8Jb-I7-x3r" kind="embed" id="Q99-bR-gqZ"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbN-MS-ZGq">
                                 <rect key="frame" x="510" y="68" width="22" height="22"/>
+                                <connections>
+                                    <action selector="onUserMightThinkTheirWorkIsDone" destination="Zg5-km-jD4" eventType="touchUpInside" id="yfe-0c-zZt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -239,6 +242,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="cKY-WO-QF8" secondAttribute="trailing" id="rJt-Zw-3WA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="cKY-WO-QF8" id="nAw-Gh-hie"/>
+                        <outlet property="mysteriousButton" destination="lbN-MS-ZGq" id="F1Y-tw-Nad"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UcZ-Vr-93C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -247,7 +254,7 @@
         <!--Step Coordination View Controller-->
         <scene sceneID="g7C-KZ-cPQ">
             <objects>
-                <pageViewController storyboardIdentifier="StepCoordinationViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="8Jb-I7-x3r" customClass="StepCoordinationViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="StepCoordination" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="8Jb-I7-x3r" customClass="StepCoordinationViewController" customModule="McKnightsAlgorithm" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3V-M3-00m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1664" y="337"/>

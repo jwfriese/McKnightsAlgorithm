@@ -22,6 +22,7 @@
 		7BB14A521D6C8678002ABE82 /* StepCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A511D6C8678002ABE82 /* StepCoordinator.swift */; };
 		7BB14A541D6C8734002ABE82 /* StepCoordinationViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A531D6C8734002ABE82 /* StepCoordinationViewControllerSpec.swift */; };
 		7BB14A561D6DEAE1002ABE82 /* QuestionViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A551D6DEAE1002ABE82 /* QuestionViewControllerSpec.swift */; };
+		7BB14A581D7080DC002ABE82 /* ApplicationViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB14A571D7080DC002ABE82 /* ApplicationViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		7BB14A511D6C8678002ABE82 /* StepCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepCoordinator.swift; sourceTree = "<group>"; };
 		7BB14A531D6C8734002ABE82 /* StepCoordinationViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepCoordinationViewControllerSpec.swift; sourceTree = "<group>"; };
 		7BB14A551D6DEAE1002ABE82 /* QuestionViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerSpec.swift; sourceTree = "<group>"; };
+		7BB14A571D7080DC002ABE82 /* ApplicationViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationViewControllerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				7BB14A3B1D6A3315002ABE82 /* Info.plist */,
 				7BB14A531D6C8734002ABE82 /* StepCoordinationViewControllerSpec.swift */,
 				7BB14A551D6DEAE1002ABE82 /* QuestionViewControllerSpec.swift */,
+				7BB14A571D7080DC002ABE82 /* ApplicationViewControllerSpec.swift */,
 			);
 			path = McKnightsAlgorithmTests;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				7BB14A561D6DEAE1002ABE82 /* QuestionViewControllerSpec.swift in Sources */,
 				7BB14A541D6C8734002ABE82 /* StepCoordinationViewControllerSpec.swift in Sources */,
+				7BB14A581D7080DC002ABE82 /* ApplicationViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
