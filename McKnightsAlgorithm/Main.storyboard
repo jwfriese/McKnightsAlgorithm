@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="McKnight's Algorithm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klY-Q6-Ok2" userLabel="Title Label">
-                                <rect key="frame" x="185" y="285" width="230" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="171" y="282" width="259" height="35"/>
+                                <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qho-CR-K8u">
-                                <rect key="frame" x="275" y="362" width="51" height="41"/>
+                                <rect key="frame" x="275" y="365" width="51" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="klY-Q6-Ok2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rqf-wR-XhO"/>
                             <constraint firstItem="Qho-CR-K8u" firstAttribute="centerX" secondItem="klY-Q6-Ok2" secondAttribute="centerX" id="fCd-Io-RDl"/>
@@ -58,13 +58,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're like a dream come true" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2A-X2-AJc">
-                                <rect key="frame" x="187" y="290" width="226" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="153" y="285" width="294" height="30"/>
+                                <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="d2A-X2-AJc" firstAttribute="centerX" secondItem="LBI-C4-Xsp" secondAttribute="centerX" id="3nW-N7-Oo7"/>
                             <constraint firstItem="d2A-X2-AJc" firstAttribute="centerY" secondItem="LBI-C4-Xsp" secondAttribute="centerY" id="8bm-mU-PDa"/>
@@ -93,13 +93,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just wanna be with you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blK-Uf-H0L">
-                                <rect key="frame" x="211" y="290" width="179" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="184" y="285" width="233" height="30"/>
+                                <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="blK-Uf-H0L" firstAttribute="centerX" secondItem="LsW-14-ItA" secondAttribute="centerX" id="7C7-B4-mB5"/>
                             <constraint firstItem="blK-Uf-H0L" firstAttribute="centerY" secondItem="LsW-14-ItA" secondAttribute="centerY" id="Wjt-t3-XhY"/>
@@ -128,13 +128,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're the only one for me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2i-0q-x52">
-                                <rect key="frame" x="200" y="290" width="200" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="161" y="286" width="278" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="X2i-0q-x52" firstAttribute="centerX" secondItem="yzp-yL-vxn" secondAttribute="centerX" id="3fA-Bm-3ip"/>
                             <constraint firstItem="X2i-0q-x52" firstAttribute="centerY" secondItem="yzp-yL-vxn" secondAttribute="centerY" id="9iL-EH-mTq"/>
@@ -163,27 +163,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you and your partner in love?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQ6-7z-pwY">
-                                <rect key="frame" x="139" y="148" width="322" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="133" y="148" width="334" height="30"/>
+                                <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccK-zz-kpk">
-                                <rect key="frame" x="155" y="285" width="30" height="30"/>
+                                <rect key="frame" x="149" y="288" width="30" height="30"/>
                                 <state key="normal" title="YES"/>
                                 <connections>
                                     <action selector="startBackAtOne" destination="Vuq-Mu-hE4" eventType="touchUpInside" id="Rzv-b2-Uch"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRa-Ka-sHF">
-                                <rect key="frame" x="415" y="285" width="30" height="30"/>
+                                <rect key="frame" x="421" y="288" width="30" height="30"/>
                                 <state key="normal" title="NO"/>
                                 <connections>
                                     <action selector="startBackAtOne" destination="Vuq-Mu-hE4" eventType="touchUpInside" id="fX3-w4-Pun"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ccK-zz-kpk" firstAttribute="top" secondItem="cQ6-7z-pwY" secondAttribute="bottom" constant="110" id="2eG-6a-Kub"/>
                             <constraint firstItem="ccK-zz-kpk" firstAttribute="leading" secondItem="cQ6-7z-pwY" secondAttribute="leading" constant="16" id="4hT-Y4-PFm"/>
@@ -232,7 +232,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cKY-WO-QF8" firstAttribute="leading" secondItem="6XB-WJ-rra" secondAttribute="leadingMargin" id="FJx-hf-lB5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lbN-MS-ZGq" secondAttribute="trailing" constant="48" id="feb-cm-e17"/>
