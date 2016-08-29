@@ -6,12 +6,17 @@ import Fleet
 class ApplicationViewControllerSpec: QuickSpec {
     override func spec() {
         class MockStepCoordinationViewController: StepCoordinationViewController {
-            var didRestart: Bool = false
+            var didRestartNormal: Bool = false
+            var didRestartWithAdmonition: Bool = false
             
             private override func viewDidLoad() { }
             
             private override func restart() {
-                didRestart = true
+                didRestartNormal = true
+            }
+            
+            private override func restartWithAdmonition() {
+                didRestartWithAdmonition = true
             }
         }
         
@@ -61,7 +66,7 @@ class ApplicationViewControllerSpec: QuickSpec {
                             }
                             
                             it("starts you back at one") {
-                                expect(coordinationViewController.didRestart).to(beTrue())
+                                expect(coordinationViewController.didRestartWithAdmonition).to(beTrue())
                             }
                         }
                         
@@ -75,7 +80,8 @@ class ApplicationViewControllerSpec: QuickSpec {
                             }
                             
                             it("does not start you back at one") {
-                                expect(coordinationViewController.didRestart).to(beFalse())
+                                expect(coordinationViewController.didRestartNormal).to(beFalse())
+                                expect(coordinationViewController.didRestartWithAdmonition).to(beFalse())
                             }
                         }
                     }

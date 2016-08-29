@@ -10,6 +10,10 @@ class QuestionViewControllerSpec: QuickSpec {
         @objc func restart() {
             didRestart = true
         }
+        
+        @objc func restartWithAdmonition() {
+            didRestart = true
+        }
     }
     
     override func spec() {

@@ -25,6 +25,17 @@ extension StepCoordinationViewController: StepCoordinator {
                                 animated: false,
                                 completion: nil)
     }
+
+    func restartWithAdmonition() {
+        let stepOne = storyboard?.instantiateViewControllerWithIdentifier("StepOne")
+        self.setViewControllers([stepOne!],
+                                direction: .Forward,
+                                animated: false) { animated in
+                                    let alert = UIAlertController(title: "", message: "For shame! In a relationship, your work as a partner is never done", preferredStyle: .Alert)
+                                    alert.addAction(UIAlertAction(title: "OK", style: .Default, handler:nil))
+                                    self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
 }
 
 extension StepCoordinationViewController: UIPageViewControllerDelegate {

@@ -43,13 +43,36 @@ class StepCoordinationViewControllerSpec: QuickSpec {
                 }
                 
                 describe("Restarting") {
-                    beforeEach {
-                        subject.restart()
+                    describe("Vanilla version") {
+                        beforeEach {
+                            subject.restart()
+                        }
+                        
+                        it("presents the step one view controller") {
+                            expect(subject.viewControllers?.count).to(equal(1))
+                            expect(subject.viewControllers).to(contain(stepOne))
+                        }
                     }
                     
-                    it("presents the step one view controller") {
-                        expect(subject.viewControllers?.count).to(equal(1))
-                        expect(subject.viewControllers).to(contain(stepOne))
+                    describe("Admonishing version") {
+                        beforeEach {
+                            subject.restartWithAdmonition()
+                        }
+                        
+                        it("presents the step one view controller") {
+                            expect(subject.viewControllers?.count).to(equal(1))
+                            expect(subject.viewControllers).to(contain(stepOne))
+                        }
+                        
+                        it("presents an alert with a warning about not being loving") {
+                            let alert = Fleet.getCurrentScreen()?.topmostPresentedViewController as? UIAlertController
+                            
+                            if let alert = alert {
+                                expect(alert.message).to(equal("For shame! In a relationship, your work as a partner is never done"))
+                            } else {
+                                fail("Did not present alert after restarting with admonition")
+                            }
+                        }
                     }
                 }
                 

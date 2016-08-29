@@ -18,7 +18,7 @@ class ApplicationViewController: UIViewController {
                 return
             }
             
-            stepCoordinator.restart()
+            stepCoordinator.restartWithAdmonition()
         }
         
         alert.addAction(agreeAction)
